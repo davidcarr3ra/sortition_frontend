@@ -76,7 +76,7 @@ const VotingHub = (props) => {
       <br></br>
       <h1 id="title">⚖️ Voting Hub </h1>
       <p>
-        To get started, provide liquidity to balancer pool 0xc697051d1c6296c24ae3bcef39aca743861d9a81 and register as a voter below.
+        The truly democratic voting platform. 
       </p>
       <form>
         <h2>✏️ Voter registration </h2>
@@ -98,22 +98,12 @@ const VotingHub = (props) => {
       </button>
       <form>
         <h2>📤 Submit a proposal </h2>
-        <h3>Address of proposed owner:</h3>
+        <h3>Proposal description:</h3>
         <input
           type="text"
-          placeholder="e.g. Jeff Bezos"
+          placeholder="e.g. Increase transportation budget by 3%"
           onChange={(event) => setURL(event.target.value)}
         />
-        <h3>Proposed action:</h3>
-        <div>
-          <input type="radio" value="add"
-          checked/>
-          <label>Add owner</label>
-        </div>
-        <div>
-          <input type="radio" value="remove"/>
-          <label>Remove owner</label>
-        </div>
       </form>
       <button className="requestButton">
         Submit
@@ -127,12 +117,12 @@ const VotingHub = (props) => {
           onChange={(event) => setURL(event.target.value)}
         />
         <div>
-          <input type="radio" value="add"
+          <input type="radio" name="rad1" value="add"
           checked/>
           <label>For</label>
         </div>
         <div>
-          <input type="radio" value="remove"/>
+          <input type="radio" name="rad1" value="remove"/>
           <label>Against</label>
         </div>
       </form>
